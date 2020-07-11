@@ -1,6 +1,8 @@
 local tag = "Canvas"
 canvas = canvas or {}
 
+print("canvas | loading server file")
+
 util.AddNetworkString(tag)
 
 net.Receive(tag, function(_, ply)

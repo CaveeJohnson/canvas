@@ -1,11 +1,14 @@
 local tag = "Canvas"
-canvas = canvas or {}
+canvas            = canvas or {}
+canvas.CLASS_NAME = "canvas"
 
-canvas.SMALL_PLATE  = 1
-canvas.NORMAL_PLATE = 2
-canvas.BIG_PLATE    = 3
-canvas.HUGE_PLATE   = 4
-canvas.HOLYSHIT_PLATE = 5
+print("canvas | loading shared file")
+
+local SMALL_PLATE  = 1
+local NORMAL_PLATE = 2
+local BIG_PLATE    = 3
+local HUGE_PLATE   = 4
+local HOLYSHIT_PLATE = 5
 
 -- image resolution, also makes text smaller, think of it like DPI
 canvas.GLOBAL_SCALE = 2
@@ -115,10 +118,10 @@ function canvas.validateUrl(url)
     local domain_seg = domain:Split(".")
     local domain_seg_count = #domain_seg
     if
-        DOMAIN_BLACKLIST[domain] or
-        (domain_seg_count == 2 and DOMAIN_BLACKLIST[domain_seg[1]]) or
-        DOMAIN_BLACKLIST[domain_seg[domain_seg_count-1]] or
-        (domain_seg_count > 2 and DOMAIN_BLACKLIST[domain_seg[domain_seg_count-2] ..  "." .. domain_seg[domain_seg_count-1]])
+        canvas.DOMAIN_BLACKLIST[domain] or
+        (domain_seg_count == 2 and canvas.DOMAIN_BLACKLIST[domain_seg[1]]) or
+        canvas.DOMAIN_BLACKLIST[domain_seg[domain_seg_count-1]] or
+        (domain_seg_count > 2 and canvas.DOMAIN_BLACKLIST[domain_seg[domain_seg_count-2] ..  "." .. domain_seg[domain_seg_count-1]])
     then
         URL_PARSE_CACHE_DENY[url] = "Blacklisted domain '" .. domain .. "'.'"
         return false, URL_PARSE_CACHE_DENY[url]

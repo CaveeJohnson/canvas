@@ -1,6 +1,8 @@
 local tag = "Canvas"
 canvas = canvas or {}
 
+print("canvas | loading client file")
+
 language.Add("Undone_" .. tag, "Undone Canvas")
 
 function canvas.setupCvars()
@@ -22,7 +24,7 @@ local function createUI()
     frame:SetTitle("Model selection")
 
     local n = 0
-    for k, mdl in ipairs(models) do
+    for k, mdl in ipairs(canvas.MODELS) do
         local spawn = frame:Add("SpawnIcon")
         spawn:SetSize(64, 64)
         spawn:Dock(LEFT)
@@ -32,7 +34,7 @@ local function createUI()
             if IsValid(frame) then frame:Remove() end
 
             net.Start(tag)
-                net.WriteUInt(NET_REQUEST_MODEL, 4)
+                net.WriteUInt(canvas.NET_REQUEST_MODEL, 4)
                 net.WriteUInt(k, 4)
             net.SendToServer()
         end

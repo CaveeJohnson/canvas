@@ -1,0 +1,14 @@
+{
+	"title"		:	"Canvas - In-game image displays",
+	"type"		:	"tool",
+	"tags"		:	[ "build", "fun" ],
+	"description":	"Provides in-game web based image displays which can be built with like props.",
+	"ignore"	:
+	[
+		"*.txt",
+		".git*",
+		".gitignore",
+		"README.md",
+		"LICENSE.md"
+	]
+}

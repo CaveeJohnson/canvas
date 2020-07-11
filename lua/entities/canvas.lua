@@ -1,3 +1,5 @@
+AddCSLuaFile()
+
 local tag = "Canvas"
 
 ENT.Type        = "anim"
