@@ -31,6 +31,11 @@ canvas.TOOLPROP_WHITELIST = {
 	["remove"] = true,
 	["keepupright"] = true,
 	["extinguish"] = true,
+
+	["permaprops"] = true,
+	["duplicator"] = true,
+	["adv_duplicator"] = true,
+	["advdupe2"] = true,
 }
 
 -- allowed forms, example bad.example.com

@@ -15,10 +15,11 @@ You can easily add them to the BaseWars Buy Menu in the config like so:
 ```
 
 ### More Coming Soon!
-- [ ] Duplicator / Perma Prop support.
+- [x] Duplicator / Perma Prop support.
 - [ ] More configuration options.
 - [ ] Admin controls for domain white/blacklist.
 - [ ] Improved UI.
+
 ... along with performance gains, not that it's an issue now!
 
 ### LICENSE

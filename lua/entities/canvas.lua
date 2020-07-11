@@ -50,6 +50,7 @@ if SERVER then
         self:SetSolid(SOLID_VPHYSICS)
         self:SetUseType(SIMPLE_USE)
         self:SetCollisionGroup(COLLISION_GROUP_WEAPON)
+        self:SetRenderMode(RENDERMODE_GLOW)
 
         local phys = self:GetPhysicsObject()
         if IsValid(phys) then
