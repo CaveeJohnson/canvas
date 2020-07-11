@@ -23,7 +23,7 @@ You can easily add them to the BaseWars Buy Menu in the config like so:
 ... along with performance gains, not that it's an issue now!
 
 ### LICENSE
-Canvas is licensed under the [MIT License](license.md); do whatever you want with it, just include the original credits please!
+Canvas is licensed under the [MIT License](LICENSE.md); do whatever you want with it, just include the original credits please!
 
 ### Credits
 - Q2F2 - Current maintainer, reworking of Zeni's prototype, QOL improvements
