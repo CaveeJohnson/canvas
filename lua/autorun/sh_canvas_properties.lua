@@ -1,3 +1,4 @@
+local tag = "Canvas"
 local canvas_order = 3300
 
 local function addProp(name, config)
